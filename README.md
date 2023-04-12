@@ -1,5 +1,6 @@
 # seinfeld-door.py
-## Work-in-progress. A motion detection python script to play the infamous Seinfeld™ bass clip.
+## Work-in-progress.
+A motion detection python script to play the infamous Seinfeld™ bass clip.
 
 This Python script uses the `OpenCV` library to capture video from a webcam and perform motion detection using a background subtraction algorithm. If motion is detected in the frame, the script uses the playsound library to play a sound file.
 
