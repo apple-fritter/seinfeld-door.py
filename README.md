@@ -8,11 +8,11 @@ This Python script uses the `OpenCV` library to capture video from a webcam and 
 
 * `import cv2` imports the `OpenCV` library for capturing and processing video frames.
 * `import numpy as np` imports the `NumPy` library for numerical computations on arrays.
-* `from playsound import playsound` imports the playsound library for playing audio files.
+* `import playsound` imports the playsound library for playing audio files.
 * `seinfeld_sound = "seinfeld.mp3"` sets the file path of the audio file to be played.
 * `cap = cv2.VideoCapture(0)` creates a VideoCapture object that captures video from the default webcam.
 * `fgbg = cv2.createBackgroundSubtractorMOG2()` creates a background subtractor object that will be used to detect motion in the video.
-* `The while True loop` runs continuously until the user presses the "q" key.
+* `while True` loop runs continuously until the user presses the "q" key.
 * `ret, frame = cap.read()` captures a frame from the video.
 * `fgmask = fgbg.apply(frame)` applies the background subtractor to the frame to obtain a foreground mask, which highlights areas of the frame that have changed from the background.
 * `if np.count_nonzero(fgmask) > 10000` checks if the number of non-zero pixels in the foreground mask is greater than a threshold value of 10000. If so, motion is detected and the audio file is played using playsound(seinfeld_sound).
