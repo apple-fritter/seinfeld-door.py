@@ -15,7 +15,7 @@ This Python script uses the `OpenCV` library to capture video from a webcam and 
 * `while True` loop runs continuously until the user presses the "q" key.
 * `ret, frame = cap.read()` captures a frame from the video.
 * `fgmask = fgbg.apply(frame)` applies the background subtractor to the frame to obtain a foreground mask, which highlights areas of the frame that have changed from the background.
-* `if np.count_nonzero(fgmask) > 10000` checks if the number of non-zero pixels in the foreground mask is greater than a threshold value of 10000. If so, motion is detected and the audio file is played using playsound(seinfeld_sound).
+* `if np.count_nonzero(fgmask) > 10000` checks if the number of non-zero pixels in the foreground mask is greater than a threshold value of 10000. If so, motion is detected and the audio file is played using `playsound(seinfeld_sound)`.
 * `cv2.imshow('frame',fgmask)` displays the video frame with the foreground mask overlay.
 * `if cv2.waitKey(1) & 0xFF == ord('q')` waits for a key event and checks if the user has pressed the "q" key. If so, the loop is exited.
 * `cap.release()` releases the webcam.
