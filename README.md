@@ -35,3 +35,7 @@ To run this script, you will need to have several dependencies installed:
 * The seinfeld mp3.
 
 Once you have installed these dependencies, you should be able to run the script by executing the Python file from the command line using `python seinfeld-door.py` (assuming the script file is named "seinfeld-door.py").
+
+## License
+
+This script is released under the [MIT License](LICENSE).
